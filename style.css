@@ -1,0 +1,138 @@
+/* font-family: 'Fraunces', serif; */
+/* font-family: 'Montserrat', sans-serif; */
+/* Dark cyan: hsl(158, 36%, 37%) */
+/* - Cream: hsl(30, 38%, 92%) */
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+
+.main-fol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.image-wrapper {
+    width: 305px;
+}
+
+
+.main-fol .image {
+    width: 100%;
+    height: 415px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.container {
+    width: 305px;
+    height: 415px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    padding-left: 28px;
+}
+
+.container .start {
+    margin-top: 16px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.5;
+    margin-bottom: 14px;
+    padding-right: 28px;
+}
+
+
+.container .second {
+    padding-right: 35px;
+    margin-top: 18px;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Fraunces', serif;
+    opacity: 0.8;
+}
+
+.container .third {
+    padding-right: 28px;
+    margin-top: 18px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    margin-top: 24px;
+    display: flex;
+
+    /* padding-top: 20px; */
+}
+
+.wrapper .discount {
+    margin-right: 22px;
+    font-size: 32px;
+    font-weight: bolder;
+    /* opacity: 100%; */
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+}
+
+.wrapper .rate {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 11px;
+    text-decoration: line-through;
+    opacity: 0.7;
+    font-size: 12px;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    margin-right: 35px;
+    padding: 15px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    text-align: center;
+}
+
+.cart .finish {
+    margin-right: 6px;
+    margin-top: 2px;
+}
+
+.cart-text {
+    align-self: center;
+}
+
+@media (max-width: 475px) {
+    .main-fol {
+        flex-direction: column;
+    }
+
+    .image-wrapper,
+    .container {
+        width: 80%;
+    }
+
+    .image {
+        height: 250px !important;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px !important;
+    }
+
+    .container {
+        margin: 0 auto;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+}
