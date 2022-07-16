@@ -27,6 +27,7 @@ body {
 
 
 .main-fol .image {
+    object-fit: cover;
     width: 100%;
     height: 415px;
     border-top-left-radius: 10px;
@@ -46,6 +47,7 @@ body {
 .container .start {
     margin-top: 16px;
     font-size: 12px;
+    letter-spacing: 4px;
     font-family: 'Montserrat', sans-serif;
     opacity: 0.5;
     margin-bottom: 14px;
@@ -112,6 +114,7 @@ body {
 
 .cart-text {
     align-self: center;
+    font-size: 20px;
 }
 
 @media (max-width: 475px) {
@@ -128,6 +131,7 @@ body {
         height: 250px !important;
         border-top-right-radius: 10px;
         border-bottom-left-radius: 0px !important;
+
     }
 
     .container {
